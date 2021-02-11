@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F0EE4BBD25C3C53A00482845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */; };
 		F0EE4BBF25C3C53A00482845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */; };
-		F0EE4BC125C3C53A00482845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BC025C3C53A00482845 /* ViewController.swift */; };
+		F0EE4BC125C3C53A00482845 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BC025C3C53A00482845 /* QuizViewController.swift */; };
 		F0EE4BC425C3C53A00482845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EE4BC225C3C53A00482845 /* Main.storyboard */; };
 		F0EE4BC625C3C53B00482845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0EE4BC525C3C53B00482845 /* Assets.xcassets */; };
 		F0EE4BC925C3C53B00482845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0EE4BC725C3C53B00482845 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		F0EE4BB925C3C53A00482845 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0EE4BC025C3C53A00482845 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0EE4BC025C3C53A00482845 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		F0EE4BC325C3C53A00482845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0EE4BC525C3C53B00482845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0EE4BC825C3C53B00482845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */,
 				F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */,
-				F0EE4BC025C3C53A00482845 /* ViewController.swift */,
+				F0EE4BC025C3C53A00482845 /* QuizViewController.swift */,
 				F0EE4BC225C3C53A00482845 /* Main.storyboard */,
 				F0EE4BC525C3C53B00482845 /* Assets.xcassets */,
 				F0EE4BC725C3C53B00482845 /* LaunchScreen.storyboard */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0EE4BC125C3C53A00482845 /* ViewController.swift in Sources */,
+				F0EE4BC125C3C53A00482845 /* QuizViewController.swift in Sources */,
 				F0EE4BBD25C3C53A00482845 /* AppDelegate.swift in Sources */,
 				F0EE4BBF25C3C53A00482845 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,13 +287,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7MN23CD5F;
+				DEVELOPMENT_TEAM = LDS693HWG3;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = aancona.sfsu.edu.QuizApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Fujii.sfsu.quizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +307,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D7MN23CD5F;
+				DEVELOPMENT_TEAM = LDS693HWG3;
 				INFOPLIST_FILE = QuizApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = aancona.sfsu.edu.QuizApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Fujii.sfsu.quizApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
