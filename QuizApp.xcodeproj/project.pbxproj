@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8666B5925D6499C00C0588C /* DeckOfQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8666B5825D6499C00C0588C /* DeckOfQuestions.swift */; };
 		F0EE4BBD25C3C53A00482845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */; };
 		F0EE4BBF25C3C53A00482845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */; };
 		F0EE4BC125C3C53A00482845 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EE4BC025C3C53A00482845 /* QuizViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8666B5825D6499C00C0588C /* DeckOfQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckOfQuestions.swift; sourceTree = "<group>"; };
 		F0EE4BB925C3C53A00482845 /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EE4BBC25C3C53A00482845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0EE4BBE25C3C53A00482845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F0EE4BC525C3C53B00482845 /* Assets.xcassets */,
 				F0EE4BC725C3C53B00482845 /* LaunchScreen.storyboard */,
 				F0EE4BCA25C3C53B00482845 /* Info.plist */,
+				D8666B5825D6499C00C0588C /* DeckOfQuestions.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				F0EE4BC125C3C53A00482845 /* QuizViewController.swift in Sources */,
 				F0EE4BBD25C3C53A00482845 /* AppDelegate.swift in Sources */,
 				F0EE4BBF25C3C53A00482845 /* SceneDelegate.swift in Sources */,
+				D8666B5925D6499C00C0588C /* DeckOfQuestions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

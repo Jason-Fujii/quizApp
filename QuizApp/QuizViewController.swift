@@ -20,15 +20,7 @@ struct FreeTextAnswer: Question {
 
 class QuizViewController: UIViewController {
     
-    var questions: [Question] = [
-        FlashCardQuestion(prompt: "Structs are Value Types"),
-        TrueOrFalseQuestion(prompt: "Classes are Reference Types", isTrue: true),
-        TrueOrFalseQuestion(prompt: "Auto layout constraints get created automatically", isTrue: false),
-        TrueOrFalseQuestion(prompt: "Android is better than IOS", isTrue: false),
-        TrueOrFalseQuestion(prompt: "JS is the worst", isTrue: false),
-        FreeTextAnswer(prompt: "What coding language are we using?", answer: "Swift"),
-        FreeTextAnswer(prompt: "What class are we taking?", answer: "CSC690")
-    ]
+    
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var trueButton: UIButton!
@@ -36,19 +28,10 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     
-    var currentIndex: Int = 0
-    
-    func andvanceIndex() {
-        if currentIndex + 1 < questions.count {
-            currentIndex += 1
-        } else {
-            questions.shuffle()
-            currentIndex = 0
-        }
-    }
+    let deck = DeckOfQuestions()
     
     func displayQuestionAtCurrentIndex() {
-        let question = questions[currentIndex]
+        let question = deck.currentQuestion
         questionLabel.text = question.prompt
         
         switch question {
@@ -74,8 +57,10 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func submitClicked(_ sender: UIButton) {
-        let question: Question = questions[currentIndex]
+        let question = deck.currentQuestion
         
+        
+        //Move logic to model
         switch question {
         case let trueOrFalseQuestion as TrueOrFalseQuestion:
             let userSelectedTrue = sender.tag == 0
@@ -103,7 +88,7 @@ class QuizViewController: UIViewController {
             print("Could not cast to existing type")
         }
         // Advance the current index
-        andvanceIndex()
+        deck.andvanceIndex()
         // Display question at the current index
         displayQuestionAtCurrentIndex()
     }
